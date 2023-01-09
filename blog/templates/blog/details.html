@@ -9,5 +9,14 @@
 <h5 class="text-center text-muted mb-5">{{ blog.date|date:'F jS Y' }}</h5>
 
 {{ blog.description|safe }}
-
+<div class="mt-3">
+    <span class="float-left">
+        <a class="btn btn-primary mb-3 text-center" href="{% url 'blog:all_blogs' %}" role="button">< Back</a>
+    </span>
+    {% if blog.url %}
+    <span class='float-right'>
+        <a class="btn btn-primary mb-3 text-center" href="{{ blog.url }}" role="button" target="_blank">My Notes</a>
+    </span>
+    {% endif %}
+</div>
 {% endblock %}
