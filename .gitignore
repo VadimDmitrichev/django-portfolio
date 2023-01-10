@@ -4,11 +4,6 @@
 __pycache__/
 local_settings.py
 /static/
-  GNU nano 4.8                                                                  .gitignore                                                                             
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-/static/
-db.sqlite3
+/media/                                                            
+
+db.*
